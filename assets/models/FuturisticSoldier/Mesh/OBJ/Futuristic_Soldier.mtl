@@ -1,0 +1,16 @@
+# Blender MTL File: 'untitled6.blend'
+# Material Count: 1
+
+newmtl Futuristic_Soldier
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump D:\\Content\\3D\\Blender 3d model\\Soldier\\FuturisticSoldier\\Textures PBR\\Blue\\Soldier_Normal(OpenGL)_Blue.png
+map_Kd D:\\Content\\3D\\Blender 3d model\\Soldier\\FuturisticSoldier\\Textures PBR\\Blue\\Soldier_BaseColor_Blue.png
+map_Ns D:\\Content\\3D\\Blender 3d model\\Soldier\\FuturisticSoldier\\Textures PBR\\Blue\\Soldier_Roughness_Blue.png
+refl D:\\Content\\3D\\Blender 3d model\\Soldier\\FuturisticSoldier\\Textures PBR\\Blue\\Soldier_Metallic_Blue.png

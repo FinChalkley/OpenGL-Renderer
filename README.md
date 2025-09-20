@@ -1,4 +1,4 @@
-This is my university openGL renderer project but made public. Sorry no commit history available.
+This is my university openGL renderer project but made public. Sorry no commit history available. Please use Cmake version 3.29.7 to download, other later bersion have issues. Link to file download location - "https://cmake.org/files/v3.29".
 
 Renderer for use across multiple modules in DMU.
 

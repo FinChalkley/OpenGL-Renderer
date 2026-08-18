@@ -61,7 +61,7 @@ $(function() { codefold.init(0); });
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>    m_options(options),</div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    m_rootPath(std::filesystem::path(path).remove_filename())</div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>{</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="keyword">auto</span> scene = aiImportFile(path.string().c_str(), aiProcess_Triangulate | aiProcess_CalcTangentSpace | aiProcess_FlipUVs);</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="keyword">auto</span> scene = aiImportFile(path.string().c_str(), aiProcess_Triangulate | aiProcess_CalcTangentSpace );</div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keywordflow">if</span>(scene) <a class="code hl_function" href="class_model.html#a23b167ce0d33f7e6ab5693cd5e81a9a5">processNode</a>(scene-&gt;mRootNode, scene);</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keywordflow">else</span> spdlog::error(<span class="stringliteral">&quot;No model loaded: scene is empty. Error msg: {}&quot;</span>, aiGetErrorString());</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>

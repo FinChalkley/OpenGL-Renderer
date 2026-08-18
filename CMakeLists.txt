@@ -42,9 +42,9 @@ set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT $
 set_target_properties(${APPLICATION_NAME} PROPERTIES VS_DEBUGGER_WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
 
 # Visual Studio filters
-source_group(TREE "${CMAKE_CURRENT_SOURCE_DIR}../application/src" PREFIX "src" FILES ${PROJECT_SOURCE_FILES})
-source_group(TREE "${CMAKE_CURRENT_SOURCE_DIR}../application/include" PREFIX "include" FILES ${PROJECT_HEADER_FILES})
-source_group(TREE "${CMAKE_CURRENT_SOURCE_DIR}../application/scripts" PREFIX "gameScripts" FILES ${SCRIPT_HEADER_FILES} ${SCRIPT_SOURCE_FILES})
+source_group(TREE "${CMAKE_CURRENT_SOURCE_DIR}/application/src" PREFIX "src" FILES ${PROJECT_SOURCE_FILES})
+source_group(TREE "${CMAKE_CURRENT_SOURCE_DIR}/application/include" PREFIX "include" FILES ${PROJECT_HEADER_FILES})
+source_group(TREE "${CMAKE_CURRENT_SOURCE_DIR}/application/scripts" PREFIX "gameScripts" FILES ${SCRIPT_HEADER_FILES} ${SCRIPT_SOURCE_FILES})
 
 set(RENDERER_NAME "DemonRenderer")
 
@@ -133,8 +133,8 @@ set (RENDERER_SOURCE_FILES
 add_library(${RENDERER_NAME} ${RENDERER_SOURCE_FILES} ${RENDERER_HEADER_FILES})
 target_include_directories(${RENDERER_NAME} PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/DemonRenderer/include")
 # Visual Studio filters
-source_group(TREE "${CMAKE_CURRENT_SOURCE_DIR}../DemonRenderer/src" PREFIX "src" FILES ${RENDERER_SOURCE_FILES})
-source_group(TREE "${CMAKE_CURRENT_SOURCE_DIR}../DemonRenderer/include" PREFIX "include" FILES ${RENDERER_HEADER_FILES})
+source_group(TREE "${CMAKE_CURRENT_SOURCE_DIR}/DemonRenderer/src" PREFIX "src" FILES ${RENDERER_SOURCE_FILES})
+source_group(TREE "${CMAKE_CURRENT_SOURCE_DIR}/DemonRenderer/include" PREFIX "include" FILES ${RENDERER_HEADER_FILES})
 
 # Add external libraries
 include(FetchContent)

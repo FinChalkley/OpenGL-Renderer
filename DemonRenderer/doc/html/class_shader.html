@@ -102,9 +102,10 @@ Private Member Functions</h2></td></tr>
 <tr class="memdesc:a9740ca7c5fb95e7de62367bd20aeb81a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compile a tesselation shader.  <br /></td></tr>
 <tr class="separator:a9740ca7c5fb95e7de62367bd20aeb81a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9aac752162e4447e1b302ec525d190b5" id="r_a9aac752162e4447e1b302ec525d190b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9aac752162e4447e1b302ec525d190b5">compileWithGeometryAndTesselation</a> (const <a class="el" href="struct_shader_description.html">ShaderDescription</a> &amp;desc)</td></tr>
+<tr class="memdesc:a9aac752162e4447e1b302ec525d190b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compile a sahder which combines geometry and tessalation.  <br /></td></tr>
 <tr class="separator:a9aac752162e4447e1b302ec525d190b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d80beec1ca95bd4451d4d10066b539f" id="r_a2d80beec1ca95bd4451d4d10066b539f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2d80beec1ca95bd4451d4d10066b539f">compileCompute</a> (const <a class="el" href="struct_shader_description.html">ShaderDescription</a> &amp;desc)</td></tr>
-<tr class="memdesc:a2d80beec1ca95bd4451d4d10066b539f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compile a sahder which combines geometry and tessalation.  <br /></td></tr>
+<tr class="memdesc:a2d80beec1ca95bd4451d4d10066b539f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compile a compute shader.  <br /></td></tr>
 <tr class="separator:a2d80beec1ca95bd4451d4d10066b539f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8884f0447eecbea8a9d6a2c5ef4c5966" id="r_a8884f0447eecbea8a9d6a2c5ef4c5966"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8884f0447eecbea8a9d6a2c5ef4c5966">compileShader</a> (GLuint &amp;shaderUnit, const std::filesystem::path &amp;sourcePath, GLuint shaderType)</td></tr>
 <tr class="memdesc:a8884f0447eecbea8a9d6a2c5ef4c5966"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compile a single shader, no linking.  <br /></td></tr>
@@ -225,10 +226,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Compile a sahder which combines geometry and tessalation. </p>
-<p>Compile a compute shader </p>
+<p>Compile a compute shader. </p>
 
-<p class="definition">Definition at line <a class="el" href="shader_8cpp_source.html#l00234">234</a> of file <a class="el" href="shader_8cpp_source.html">shader.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shader_8cpp_source.html#l00297">297</a> of file <a class="el" href="shader_8cpp_source.html">shader.cpp</a>.</p>
 
 </div>
 </div>
@@ -257,7 +257,7 @@ Private Attributes</h2></td></tr>
 
 <p>Compile a standard rasterisation program with frag and vertex shader source. </p>
 
-<p class="definition">Definition at line <a class="el" href="shader_8cpp_source.html#l00091">91</a> of file <a class="el" href="shader_8cpp_source.html">shader.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shader_8cpp_source.html#l00094">94</a> of file <a class="el" href="shader_8cpp_source.html">shader.cpp</a>.</p>
 
 </div>
 </div>
@@ -295,7 +295,7 @@ Private Attributes</h2></td></tr>
 
 <p>Compile a single shader, no linking. </p>
 
-<p class="definition">Definition at line <a class="el" href="shader_8cpp_source.html#l00265">265</a> of file <a class="el" href="shader_8cpp_source.html">shader.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shader_8cpp_source.html#l00328">328</a> of file <a class="el" href="shader_8cpp_source.html">shader.cpp</a>.</p>
 
 </div>
 </div>
@@ -324,7 +324,7 @@ Private Attributes</h2></td></tr>
 
 <p>Compile a geometry shader. </p>
 
-<p class="definition">Definition at line <a class="el" href="shader_8cpp_source.html#l00131">131</a> of file <a class="el" href="shader_8cpp_source.html">shader.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shader_8cpp_source.html#l00134">134</a> of file <a class="el" href="shader_8cpp_source.html">shader.cpp</a>.</p>
 
 </div>
 </div>
@@ -346,12 +346,14 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="shader_8hpp_source.html#l00070">70</a> of file <a class="el" href="shader_8hpp_source.html">shader.hpp</a>.</p>
+<p>Compile a sahder which combines geometry and tessalation. </p>
+
+<p class="definition">Definition at line <a class="el" href="shader_8cpp_source.html#l00237">237</a> of file <a class="el" href="shader_8cpp_source.html">shader.cpp</a>.</p>
 
 </div>
 </div>
@@ -380,7 +382,7 @@ Private Attributes</h2></td></tr>
 
 <p>Compile a tesselation shader. </p>
 
-<p class="definition">Definition at line <a class="el" href="shader_8cpp_source.html#l00180">180</a> of file <a class="el" href="shader_8cpp_source.html">shader.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shader_8cpp_source.html#l00183">183</a> of file <a class="el" href="shader_8cpp_source.html">shader.cpp</a>.</p>
 
 </div>
 </div>
@@ -413,7 +415,7 @@ Private Attributes</h2></td></tr>
 
 <p>Upload a mat4 uniform. </p>
 
-<p class="definition">Definition at line <a class="el" href="shader_8cpp_source.html#l00308">308</a> of file <a class="el" href="shader_8cpp_source.html">shader.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shader_8cpp_source.html#l00371">371</a> of file <a class="el" href="shader_8cpp_source.html">shader.cpp</a>.</p>
 
 </div>
 </div>
@@ -446,7 +448,7 @@ Private Attributes</h2></td></tr>
 
 <p>Upload a vec2 uniform. </p>
 
-<p class="definition">Definition at line <a class="el" href="shader_8cpp_source.html#l00338">338</a> of file <a class="el" href="shader_8cpp_source.html">shader.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shader_8cpp_source.html#l00401">401</a> of file <a class="el" href="shader_8cpp_source.html">shader.cpp</a>.</p>
 
 </div>
 </div>
@@ -479,7 +481,7 @@ Private Attributes</h2></td></tr>
 
 <p>Upload a vec3 uniform. </p>
 
-<p class="definition">Definition at line <a class="el" href="shader_8cpp_source.html#l00313">313</a> of file <a class="el" href="shader_8cpp_source.html">shader.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shader_8cpp_source.html#l00376">376</a> of file <a class="el" href="shader_8cpp_source.html">shader.cpp</a>.</p>
 
 </div>
 </div>
@@ -512,7 +514,7 @@ Private Attributes</h2></td></tr>
 
 <p>Upload a vec4 uniform. </p>
 
-<p class="definition">Definition at line <a class="el" href="shader_8cpp_source.html#l00318">318</a> of file <a class="el" href="shader_8cpp_source.html">shader.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shader_8cpp_source.html#l00381">381</a> of file <a class="el" href="shader_8cpp_source.html">shader.cpp</a>.</p>
 
 </div>
 </div>
@@ -545,7 +547,7 @@ Private Attributes</h2></td></tr>
 
 <p>Upload an float uniform. </p>
 
-<p class="definition">Definition at line <a class="el" href="shader_8cpp_source.html#l00333">333</a> of file <a class="el" href="shader_8cpp_source.html">shader.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shader_8cpp_source.html#l00396">396</a> of file <a class="el" href="shader_8cpp_source.html">shader.cpp</a>.</p>
 
 </div>
 </div>
@@ -578,7 +580,7 @@ Private Attributes</h2></td></tr>
 
 <p>Upload an int uniform, this includes samplers. </p>
 
-<p class="definition">Definition at line <a class="el" href="shader_8cpp_source.html#l00323">323</a> of file <a class="el" href="shader_8cpp_source.html">shader.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shader_8cpp_source.html#l00386">386</a> of file <a class="el" href="shader_8cpp_source.html">shader.cpp</a>.</p>
 
 </div>
 </div>
@@ -616,7 +618,7 @@ Private Attributes</h2></td></tr>
 
 <p>Upload an array of int uniform, this includes samplers. </p>
 
-<p class="definition">Definition at line <a class="el" href="shader_8cpp_source.html#l00328">328</a> of file <a class="el" href="shader_8cpp_source.html">shader.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shader_8cpp_source.html#l00391">391</a> of file <a class="el" href="shader_8cpp_source.html">shader.cpp</a>.</p>
 
 </div>
 </div>
